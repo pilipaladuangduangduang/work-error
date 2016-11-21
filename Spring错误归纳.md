@@ -14,6 +14,10 @@
 HTTP Status 400 ———— The request sent by the client was syntactically incorrect ().
 ``` 
 
+### Spring-Data-Redis版本过低而引发的错误
 
+因为Spring-Data-Redis版本过低而引发的BUG：Bulk add of multiple elements with the same score is not supported. Add the elements individually.
+
+我们项目所使用的版本是1.2的时候会出现这个问题，升级到1.3.6之后这个BUG就修复了
 
 
